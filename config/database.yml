@@ -23,3 +23,6 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+  database: hw4practice_production
+  username: hw4practice_1
+  password: <%= ENV["HW4PRACTICE_DATABASE_PASSWORD"] %>
