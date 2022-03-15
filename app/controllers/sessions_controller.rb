@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         redirect_to "/sessions/new"
       end
     else
-      flash[:notice] = "Nope"
+      flash[:notice] = "Incorrect Username or Password"
       redirect_to "/sessions/new"
     end
   end

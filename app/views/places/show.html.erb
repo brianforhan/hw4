@@ -10,17 +10,13 @@
   </div>
 <% end %>
 
-<div class="p-3">
-<h6>My Posts</h6>
-</div>
-
 <div class="row">
   <% for post in @place.posts.where({ user_id: session[:user_id] }) %>
     <div class="col-md-4 col-sm-6">
       <div class="p-3">
-        <h7>
+        <h6>
           <%= post.title %>
-        </h7>
+        </h6>
         <p>
           <%= post.posted_on %>
         </p>
