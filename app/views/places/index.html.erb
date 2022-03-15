@@ -1,14 +1,14 @@
-<div class="p-3">
+<div class="p-2">
   <h5>
     Places
   </h5>
 </div>
 
-<div class="p-3">
+<div class="p-2">
   <a href="/places/new" class="btn btn-primary">New place</a>
 </div>
 
-<div class="p-3">
+<div class="p-2">
   <% for place in @places %>
     <h6><a href="/places/<%= place.id %>"><%= place.name %></a></h6>
   <% end %>
